@@ -1,0 +1,67 @@
+algoritmo DadosPassageiro;
+// Síntese
+//  Objetivo: Coletar dados para companhia aérea  
+//  Entrada : Nome, sexo, número do CPF, número do telefone, quantidade de malas, peso total das malas
+//  Saída   : Mensagem contendo todos os dados de entrada. 
+
+
+principal
+	// Declarações
+texto nome, sexo, numeroCPF, numeroTelefone;
+inteiro quantidadeMalas; 
+real pesoTotalMalas; 
+
+	// Instruções
+	escreval("Bem-vindo ao sistema de cadastro da Companhia Aérea!");
+    escreval("Por favor, insira os dados solicitados abaixo:");
+    escreval("---------------------------------------------");
+    
+    // Coletar nome 
+	escreva ("Digite seu nome: ");
+    leia(nome);
+
+    // Coletar sexo
+    escreva ("Digite seu sexo: ");
+    leia(sexo);
+
+   // Coletar CPF
+    escreva ("Digite seu CPF (11 dígitos): "); 
+    leia(numeroCPF);
+    
+   // Coletar telefone
+   escreva("Digite seu número de telefone: ");
+   leia(numeroTelefone);
+
+   // Coletar quantidades de Malas
+   escreva("Qual a quantidade de malas: ");
+   leia(quantidadeMalas);
+
+  // Coletar peso total das malas
+  escreva("Peso total das malas (em kg): ");
+  leia(pesoTotalMalas);
+    
+    // Saída de dados
+    escreval("---------------------------------------------");
+    escreval("Dados do passageiro:");
+    escreval("Nome: ", nome);
+    escreval("Sexo: ", sexo);
+    escreval("CPF: ", numeroCPF);
+    escreval("Número de telefone: ", numeroTelefone);
+    escreval("Quantidade de malas: ", quantidadeMalas);
+    escreval("Peso total das malas: ", pesoTotalMalas, "kg");
+
+    // Informações sobre malas
+    escreval("---------------------------------------------");
+    escreval("Informações sobre malas:");
+    escreval("Quantidade de malas permitidas: 2");
+    escreval("Tipos de malas permitidas:");
+    escreval("- Mala de mão (até 10 kg)");
+    escreval("- Mala despachada (até 23.5 kg)");
+
+
+    // Verificação de limite de peso (sem usar "se")
+    escreval("Verificação de peso: ", pesoTotalMalas, " kg");
+    escreval("Limite permitido: 23.5 kg");
+
+    
+fimPrincipal
